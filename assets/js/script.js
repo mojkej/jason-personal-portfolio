@@ -27,7 +27,6 @@ for (let i = 0; i < formInputs.length; i++) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// 🔁 Table de correspondance français → data-page
 const pageMap = {
   "à propos": "about",
   "parcours": "resume",
@@ -35,7 +34,6 @@ const pageMap = {
   "contact": "contact"
 };
 
-// Navigation
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
     const clickedText = this.innerHTML.trim().toLowerCase();
